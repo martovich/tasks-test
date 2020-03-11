@@ -27,10 +27,10 @@
 }
 
 .usr1 {
-    grid-area: 1;
+    grid-area: 2;
 }
 .usr2 {
-    grid-area: 2;
+    grid-area: 3;
 }
 
 .timestamp {
@@ -54,6 +54,10 @@
 
 .usr2 .name {
     color: chocolate;
+}
+
+.fio {
+    grid-area: 1/3;
 }
 
 

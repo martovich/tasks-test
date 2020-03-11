@@ -2,7 +2,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-areas: "h h" "n c";
-  grid-template-rows: 60px minmax(100px, auto);
+  grid-template-rows: auto minmax(100px, auto);
   grid-template-columns: 2fr 10fr;
   /*width: auto;*/
   /*grid-gap: 10px;*/
