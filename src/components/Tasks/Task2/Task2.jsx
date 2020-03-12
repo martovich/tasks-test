@@ -11,7 +11,7 @@ class Task2 extends React.Component {
     render = () => {
         let qArr = qualitysArr.map((arr, index) => <div key={index} className={arr.style}><span>{arr.quality}</span></div>);
         return (
-            <div>
+            <div className={}>
                 {qArr}
             </div>
         );
