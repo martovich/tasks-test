@@ -2,7 +2,7 @@ import React from "react";
 
 const qualitysArr = [
     {quality: 'рационалист', style : ''},
-    {quality: 'комуннист', style:'col'},
+    {quality: 'комуннист', style:'colTask2'},
     {quality: 'анимешник', style: ''}
 ];
 
