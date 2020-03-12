@@ -10,7 +10,6 @@ const qualitysArr = [
 class Task2 extends React.Component {
     render = () => {
         let qArr = qualitysArr.map((arr, index) => <div key={index} className={arr.style}><span>{arr.quality}</span></div>);
-        let colN = qArr.indColor;
         return (
             <div>
                 {qArr}
