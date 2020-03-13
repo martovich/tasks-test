@@ -12,7 +12,7 @@ const qualitysArr = [
 class Task2 extends React.Component {
     render = () => {
         let qArr = qualitysArr.map((arr, index) =>
-            <div key={index} className = {`${arr.style}` === 'colTaskModule2' ? `${s.colTaskModule2}`:''}>
+            <div key={index} className = {arr.style === 'colTaskModule2' ? s.colTaskModule2:''}>
                 <span>{arr.quality}</span>
             </div>
         );
