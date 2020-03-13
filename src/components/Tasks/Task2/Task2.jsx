@@ -2,17 +2,26 @@ import React from "react";
 import s from "./Task2.module.css"
 
 
-const qualitysArr = [
+/*const qualitysArr = [
     {quality: 'рационалист', style: ''},
-    {quality: 'комуннист', style: 'colTaskModule2'},
+    {quality: 'комуннист', style: s.colTaskModule2},
     {quality: 'анимешник', style: ''}
+];*/
+
+const qualitysArr = [
+    {quality: 'рационалист'},
+    {quality: 'комуннист'},
+    {quality: 'анимешник'}
 ];
 
 
 class Task2 extends React.Component {
     render = () => {
         let qArr = qualitysArr.map((arr, index) =>
-            <div key={index} className = {arr.style === 'colTaskModule2' ? s.colTaskModule2:''}>
+            /*<div key={index} className = {arr.style}>
+                <span>{arr.quality}</span>
+            </div>*/
+            <div key={index} className = {index === 1 ? s.colTaskModule2 : ''}>
                 <span>{arr.quality}</span>
             </div>
         );
