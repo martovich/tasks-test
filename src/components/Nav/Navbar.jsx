@@ -11,7 +11,7 @@ const Navbar = () => (
             <NavLink to="/task2" activeClassName={s.activLink}>Task2</NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to="/task3" activeClassName={s.activLink}>Task3</NavLink>
+            <NavLink to="/task3" activeClassName={s.activLink}>Task3,4</NavLink>
         </div>
     </div>
 );
