@@ -1,0 +1,15 @@
+.btn {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.btn > button {
+     width: 85%;
+     padding: 5px;
+     border: none;
+     border-radius: 5px;
+     font-weight: bold;
+     border-color: #2a2dff;
+     border-style: solid;
+     border-width: 3px;
+ }

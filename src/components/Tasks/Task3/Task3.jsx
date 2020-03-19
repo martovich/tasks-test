@@ -1,33 +1,34 @@
 import React from "react";
 import s from "./Task3.module.css"
+import Span from "./Span/Span";
+import Input from "./Input/Input";
+import Button from "./Button/Button";
 
-const Msg = (props) => (
-    <div className={props.msgPos}>
-        <div className={s.message}>
-            <p className={s.name}>{props.name}</p>
-            {props.msg}
-            <span className={s.timestamp}>{props.time}</span>
-        </div>
-    </div>
-);
+class Task3 extends React.Component {
+    state = {
+        spanVal: 0,
+        msg: ''
+    };
 
-const Fio = (props) => (
-    <div className={s.fio}>
-        <h1>Артём Москалёв</h1>
-    </div>
-);
+    updateData = (value) => {
+        if(this.state.msg.length > 0)
+            alert("Привет " + this.state.msg);
+        this.setState({ spanVal: value, msg:''})
+    }
 
-const Task3 = () => (
-    <div className={s.task}>
-        <Fio/>
-        <Msg name="Артём Москалёв"
-             msg="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
-             time="10:20" msgPos={s.usr1}/>
-        <Msg name="Дима К"
-             msg="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque id libero nam omnis provident ratione repellat saepe ullam voluptatem. Architecto commodi debitis facilis maiores possimus quia reprehenderit totam voluptate?"
-             time="10:22" msgPos={s.usr2}/>
+    updateAlert = (value) => {
+        this.setState({ msg: value})
+    }
 
-    </div>
-);
+    render() {
+        return (
+            <div className={s.task}>
+                <Span value = {this.state.spanVal}/>
+                <Button value = {this.state.spanVal} updateData={this.updateData} />
+                <Input value = {this.state.msg} updateAlert={this.updateAlert}/>
+            </div>
+        )
+    }
+}
 
 export default Task3;

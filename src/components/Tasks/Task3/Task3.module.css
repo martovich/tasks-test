@@ -1,64 +1,8 @@
 .task {
     display: grid;
     /*grid-template-areas: "m u";*/
-    grid-template-columns: 20% 20% 60%;
-    grid-template-rows: repeat(5,auto);
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(1,auto);
     padding: 1em;
 }
-
-.message {
-    position: relative;
-    color: #fff;
-    /*max-width: 260px;*/
-    background-color: #2e7384;
-    margin: 12px 8px 0;
-    padding: 7px 7px;
-    border-radius: 6px;
-    overflow-wrap: break-word;
-}
-
-.message:after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: -23px;
-    width: 30px;
-    height: 25px;
-    background: radial-gradient(circle at top left, transparent 58%, #2e7384 60%);
-}
-
-.usr1 {
-    grid-area: 2;
-}
-.usr2 {
-    grid-area: 3;
-}
-
-.timestamp {
-    font-size: 12px;
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
-    text-transform: uppercase;
-    color: cyan;
-}
-
-.name {
-    font-weight: 600;
-    font-size: 14px;
-    margin: 0px 0px 9px;
-}
-
-.usr1 .name {
-    color: chartreuse;
-}
-
-.usr2 .name {
-    color: chocolate;
-}
-
-.fio {
-    grid-area: 1/3;
-}
-
 
